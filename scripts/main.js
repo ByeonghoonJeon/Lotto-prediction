@@ -86,7 +86,7 @@ async function formOnSubmit(event) {
     }
     numArray.push(num8);
 
-    return (number.innerHTML = numArray.sort((a, b) => a - b).join(", "));
+    return (number.innerHTML = numArray.join(", "));
   }
   numberBox.classList.remove("collapse");
   num();

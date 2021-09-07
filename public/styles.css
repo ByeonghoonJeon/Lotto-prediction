@@ -9,3 +9,13 @@ body {
 .whiteCharacter {
   color: white;
 }
+
+.textbox {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  margin-bottom: 5rem;
+}
+
+.calcDiv {
+  text-align: center;
+}

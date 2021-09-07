@@ -86,7 +86,7 @@ async function formOnSubmit(event) {
     }
     numArray.push(num8);
 
-    return (number.innerHTML = numArray.join(", "));
+    return (numberSuggestion.innerHTML = numArray.join(", "));
   }
   numberBox.classList.remove("collapse");
   num();

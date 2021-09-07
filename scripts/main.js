@@ -86,9 +86,9 @@ async function formOnSubmit(event) {
     }
     numArray.push(num8);
 
+    numberBox.classList.remove("collapse");
     return (numberSuggestion.innerHTML = numArray.join(", "));
   }
-  numberBox.classList.remove("collapse");
   num();
 
   //   //   set inner html of result-data div to weather data

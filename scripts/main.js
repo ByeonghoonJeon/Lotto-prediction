@@ -94,13 +94,16 @@ async function formOnSubmit(event) {
 
 window.onload = function () {
   const yearDropdown = document.querySelector("#year-dropdown");
-  const createOption = document.createElement("option");
-  const currentYear = new Date().getFullYear;
+  let currentYear = new Date().getFullYear();
   const earliestYear = 1910;
+  console.log(currentYear);
 
   while (currentYear >= earliestYear) {
+    const createOption = document.createElement("option");
+    createOption.value = currentYear;
+    createOption.text = currentYear;
+    yearDropdown.add(createOption);
     currentYear -= 1;
-    console.log(currentYear);
   }
 
   // const bottomYear = 1910;

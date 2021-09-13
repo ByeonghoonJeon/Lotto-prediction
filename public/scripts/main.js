@@ -90,14 +90,34 @@ async function formOnSubmit(event) {
     return (numberSuggestion.innerHTML = numArray.join(", "));
   }
   num();
-
-  //   //   set inner html of result-data div to weather data
-  //   const resultDataDiv = document.querySelector("#result-data");
-  //   resultDataDiv.innerHTML = `
-  //   <h3>-----</h3><h3>${query}</h3><h3 style="color: #293B5F;"><strong>${weatherDescription}</strong></h3><h3>-----</h3>
-  //   <h3>Temperature</h3><h3 style="color: #293B5F;"><strong>${temp} °C</strong></h3><h3>-----</h3>
-  //   `;
-
-  //   // remove the collapse class (show the div)
-  //   resultDataDiv.classList.remove("collapse");
 }
+
+window.onload = function () {
+  const yearDropdown = document.querySelector("#year-dropdown");
+  const createOption = document.createElement("option");
+  const currentYear = new Date().getFullYear;
+  const earliestYear = 1910;
+
+  while (currentYear >= earliestYear) {
+    currentYear -= 1;
+    console.log(currentYear);
+  }
+
+  // const bottomYear = 1910;
+  // while (currentYear >= bottomYear) {
+  //   const optionYears = document.createElement("option");
+  //   optionYears.text = currentYear;
+  //   optionYears.value = currentYear;
+  //   yearDropdown = add(optionYears);
+  //   currentYear -= 1;
+  // }
+};
+//   //   set inner html of result-data div to weather data
+//   const resultDataDiv = document.querySelector("#result-data");
+//   resultDataDiv.innerHTML = `
+//   <h3>-----</h3><h3>${query}</h3><h3 style="color: #293B5F;"><strong>${weatherDescription}</strong></h3><h3>-----</h3>
+//   <h3>Temperature</h3><h3 style="color: #293B5F;"><strong>${temp} °C</strong></h3><h3>-----</h3>
+//   `;
+
+//   // remove the collapse class (show the div)
+//   resultDataDiv.classList.remove("collapse");
